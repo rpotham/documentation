@@ -40,7 +40,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
     defer span.Finish()
 
     // Append span info to log messages:
-    log.Printf("my log message %v", span)
+    log.Printf("My log message %v", span)
 }
 ```
 
