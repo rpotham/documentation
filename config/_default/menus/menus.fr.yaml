@@ -1550,6 +1550,12 @@ api_v1:
   - name: Check permissions for log services
     parent: AWS Logs Integration
     url: check-permissions-for-log-services
+  - name: Authentication
+    url: /fr/api/v1/authentication/
+    identifier: Authentication
+  - name: Validate API key
+    parent: Authentication
+    url: validate-api-key
   - name: Azure Integration
     url: /fr/api/v1/azure-integration/
     identifier: Azure Integration
@@ -1895,6 +1901,9 @@ api_v1:
   - name: Get all service dependencies
     parent: Service Dependencies
     url: get-all-service-dependencies
+  - name: Get one service's dependencies
+    parent: Service Dependencies
+    url: get-one-services-dependencies
   - name: Service Level Objectives
     url: /fr/api/v1/service-level-objectives/
     identifier: Service Level Objectives
@@ -2113,6 +2122,9 @@ api_v2:
   - name: AWS Logs Integration
     url: /fr/api/v2/aws-logs-integration/
     identifier: AWS Logs Integration
+  - name: Authentication
+    url: /fr/api/v2/authentication/
+    identifier: Authentication
   - name: Azure Integration
     url: /fr/api/v2/azure-integration/
     identifier: Azure Integration
@@ -2158,6 +2170,24 @@ api_v2:
   - name: Logs
     url: /fr/api/v2/logs/
     identifier: Logs
+  - name: Logs Archives
+    url: /fr/api/v2/logs-archives/
+    identifier: Logs Archives
+  - name: Get all archives
+    parent: Logs Archives
+    url: get-all-archives
+  - name: Create an archive
+    parent: Logs Archives
+    url: create-an-archive
+  - name: Delete an archive
+    parent: Logs Archives
+    url: delete-an-archive
+  - name: Get an archive
+    parent: Logs Archives
+    url: get-an-archive
+  - name: Update an archive
+    parent: Logs Archives
+    url: update-an-archive
   - name: Logs Indexes
     url: /fr/api/v2/logs-indexes/
     identifier: Logs Indexes
